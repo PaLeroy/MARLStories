@@ -1,0 +1,44 @@
+\ProvidesPackage{packages}[2022/10/01]
+
+% Text packages
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{eurosym}
+
+% Bibliographies packages
+\RequirePackage{csquotes}
+\RequirePackage{natbib}
+
+% Text packages
+\RequirePackage{color}
+\RequirePackage{xcolor}
+\RequirePackage{siunitx}
+
+% Math packages
+\RequirePackage{amsmath, amsfonts, amssymb, amsthm, mathtools, empheq}
+\RequirePackage{dsfont, relsize}
+\RequirePackage{thmtools, thm-restate}
+\RequirePackage{multirow}
+\allowdisplaybreaks
+
+% Algorithms packages
+\RequirePackage[ruled, lined, linesnumbered, noend]{algorithm2e}
+
+% Figures packages
+\RequirePackage[skip=0pt]{caption}
+\RequirePackage{subcaption}
+\RequirePackage{wrapfig}
+\RequirePackage{tikz, pgfplots}
+\usetikzlibrary{arrows, arrows.meta, patterns, automata, calc, positioning}
+\usetikzlibrary{overlay-beamer-styles}
+
+% Metropolis customization
+\usefonttheme{serif}
+\setbeamersize{text margin left=6mm, text margin right=6mm}
+\setbeamercolor{alerted text}{fg=BrightOrange}
+\setbeamercolor{math text}{fg=DarkBlue}
+\setbeamerfont{title}{size=\huge, series=\bfseries}
+\setbeamerfont{section title}{size=\huge, series=\bfseries}
+\setlength\abovedisplayskip{20pt}
+\setlength\belowdisplayskip{20pt}
+\setlength\abovedisplayshortskip{20pt}
+\setlength\belowdisplayshortskip{20pt}

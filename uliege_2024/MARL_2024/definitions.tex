@@ -1,0 +1,132 @@
+% Define custom colors
+\definecolor{DarkBlue}{HTML}{36587E}
+\definecolor{DarkGreen}{HTML}{006600}
+\definecolor{BrightOrange}{HTML}{EB811B}
+
+% Define matplotlib color
+\definecolor{C1}{HTML}{1f77b4}
+\definecolor{C2}{HTML}{ff7f0e}
+\definecolor{C3}{HTML}{2ca02c}
+\definecolor{C4}{HTML}{d62728}
+\definecolor{C5}{HTML}{9467bd}
+\definecolor{C6}{HTML}{8c564b}
+\definecolor{C7}{HTML}{e377c2}
+\definecolor{C8}{HTML}{7f7f7f}
+\definecolor{C9}{HTML}{bcbd22}
+\definecolor{C10}{HTML}{17becf}
+
+% PDF encoding
+\def\texpdf#1#2{\texorpdfstring{#1}{#2}}
+
+% Figures
+\def\imagebox#1#2{\vtop to #1{\null\hbox{#2}\vfill}}
+
+% Text locutions
+\def\ie{i.e.\@}
+\def\eg{e.g.\@}
+\def\resp{resp.\@}
+\def\wrt{w.r.t.\@}
+
+% Overwrite commands
+\def\epsilon{\varepsilon}
+
+% Backslash capital case for calligraphic
+\def\A{\mathcal A}
+\def\B{\mathcal B}
+\def\C{\mathcal C}
+\def\D{\mathcal D}
+\def\E{\mathcal E}
+\def\F{\mathcal F}
+\def\G{\mathcal G}
+\def\H{\mathcal H}
+\def\I{\mathcal I}
+\def\J{\mathcal J}
+\def\K{\mathcal K}
+\def\L{\mathcal L}
+\def\M{\mathcal M}
+\def\N{\mathcal N}
+\def\O{\mathcal O}
+\def\P{\mathcal P}
+\def\Q{\mathcal Q}
+\def\R{\mathcal R}
+\def\S{\mathcal S}
+\def\T{\mathcal T}
+\def\U{\mathcal U}
+\def\V{\mathcal V}
+\def\W{\mathcal W}
+\def\X{\mathcal X}
+\def\Y{\mathcal Y}
+\def\Z{\mathcal Z}
+
+% Backslash lower case for bold
+\def\a{\mathbf a}
+\def\b{\mathbf b}
+\def\c{\mathbf c}
+\def\d{\mathbf d}
+\def\e{\mathbf e}
+\def\f{\mathbf f}
+\def\g{\mathbf g}
+\def\h{\mathbf h}
+\def\i{\mathbf i}
+\def\j{\mathbf j}
+\def\k{\mathbf k}
+\def\l{\mathbf l}
+\def\m{\mathbf m}
+\def\n{\mathbf n}
+\def\o{\mathbf o}
+\def\p{\mathbf p}
+\def\q{\mathbf q}
+\def\r{\mathbf r}
+\def\s{\mathbf s}
+\def\t{\mathbf t}
+\def\u{\mathbf u}
+\def\v{\mathbf v}
+\def\w{\mathbf w}
+\def\x{\mathbf x}
+\def\y{\mathbf y}
+\def\z{\mathbf z}
+
+% Ensemble
+\def\NN{\mathbb N}
+\def\ZZ{\mathbb Z}
+\def\RR{\mathbb R}
+\def\CC{\mathds C}
+
+% Special vectors and matrices
+\def\0{\mathbf 0}
+\def\1{\mathbf 1}
+\def\eye{\mathds 1}
+
+% Differential symbol
+\def\diff#1{\operatorname{d}\!{#1}}
+
+% Math operators
+\DeclareMathOperator*{\expect}{\mathlarger{\mathbb{E}}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\def\sg{\operatorname{sg}}
+
+\newenvironment{psmatrix}{\left(\begin{smallmatrix}}{\end{smallmatrix}\right)}
+
+% Names for autoref command
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+\def\subsubsectionautorefname{Subsubsection}
+\def\paragraphautorefname{Paragraph}
+\def\tableautorefname{Table}
+\def\equationautorefname{Equation}
+\def\algorithmautorefname{Algorithm}
+\def\figureautorefname{Figure}
+
+% Tikz
+\newcommand<>{\uncoverubrace}[2]{%
+  \onslide#3 \underbrace{ \onslide<1->%
+  #1%
+  \onslide#3 }_{#2} \onslide<1->%
+}
+\newcommand<>{\uncoverobrace}[2]{%
+  \onslide#3 \overbrace{ \onslide<1->%
+  #1%
+  \onslide#3 }^{#2} \onslide<1->%
+}
